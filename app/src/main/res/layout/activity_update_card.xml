@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateCardActivity">
+
+    <ImageView
+        android:id="@+id/updateImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar3"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/infoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID : "
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/idVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/infoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/nameVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/boxbg"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/infoGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grade : "
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Spinner
+                    android:id="@+id/gradeVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boxbg"
+                    android:dropDownSelector="#94FFFBFB"
+                    android:fontFamily="@font/century"
+                    android:popupBackground="@drawable/spinnerbg"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down_arrow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/infoDept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department : "
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5">
+
+            <Spinner
+                android:id="@+id/deptVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boxbg"
+                android:dropDownSelector="#94FFFBFB"
+                android:fontFamily="@font/century"
+                android:popupBackground="@drawable/spinnerbg"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/down_arrow" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/infoWalletAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wallet Balance : "
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/walletAmtVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/infoActiveState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active State : "
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/activeStateVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boxbg"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:fontFamily="@font/century"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updateInfoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/gill_con"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Update" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a8302c2c"
+        android:gravity="center">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

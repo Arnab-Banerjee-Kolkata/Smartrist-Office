@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="300dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <Button
+        android:id="@+id/creditb"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_stars_black_24dp"
+        android:padding="11dp"
+        android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/ic_stars_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iconImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="-100dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select one of these sections to get started !"
+            android:fontFamily="@font/century"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:textAllCaps="false"
+                android:fontFamily="@font/gill_con"
+                android:id="@+id/student"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/ic_person_outline_black_24dp"
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp" />
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="0dp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Wallet"
+                android:textAllCaps="false"
+                android:fontFamily="@font/gill_con"
+                android:id="@+id/wallet"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

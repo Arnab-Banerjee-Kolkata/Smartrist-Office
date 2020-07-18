@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfficeWelcome"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/studentBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/century"
+            android:text="Student Registration"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:id="@+id/scrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:background="@drawable/boxbg"
+            android:padding="10dp"
+            android:paddingEnd="5dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:paddingRight="5dp">
+
+            <include
+                layout="@layout/student_reg_layout"
+                android:background="@android:color/transparent" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/createCard"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gill_con"
+                android:text="Create Card"
+                android:drawableStart="@drawable/ic_add_black_24dp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawableLeft="@drawable/ic_add_black_24dp" />
+            
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/updateCard"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gill_con"
+                android:text="Update Info"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_update_black_24dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawableLeft="@drawable/ic_update_black_24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/regWait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7daf6ee7"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
