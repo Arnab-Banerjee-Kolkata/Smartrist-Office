@@ -1,5 +1,6 @@
 # Smartrist-Office
-Office application for smartrist card
+Office application for smartrist card.
+Office staff can use this to issue new cards to students, update details of existing card and recharge e-wallet of student. Students just need to scan their unique-dynamic card to avail its benefits.
 
 # Screenshots
 
