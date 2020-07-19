@@ -8,35 +8,22 @@ Office application for smartrist card
 <tr>
 
 <td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Library/blob/master/screenshots/lib1.png" alt="description here" height="500" width="350"/>
+<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Office/blob/master/screenshots/ofc1.png" alt="description here" height="500" width="350"/>
 <br />
 </td>
 
 <td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Library/blob/master/screenshots/lib2.png" alt="description here" height="500" width="350" />
+<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Office/blob/master/screenshots/ofc2.png" alt="description here" height="500" width="350" />
 <br />
 </td>
 
 <td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Library/blob/master/screenshots/lib3.png" alt="description here" height="500" width="350" />
+<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Office/blob/master/screenshots/ofc3.png" alt="description here" height="500" width="350" />
 <br />
 </td>
 
 </tr>
 
-<tr>
-
-<td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Library/blob/master/screenshots/lib4.png" alt="description here" height="500" width="350"/>
-<br />
-</td>
-
-<td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Library/blob/master/screenshots/lib5.png" alt="description here" height="500" width="350" />
-<br />
-</td>
-
-</tr>
 </table>
 
 # Presentation video
