@@ -45,8 +45,7 @@
                 android:padding="8dp"
                 android:textColor="@android:color/white"
                 android:textSize="22sp"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
+                android:textAlignment="center"/>
         </android.support.design.widget.TextInputLayout>
 
         <LinearLayout
@@ -68,8 +67,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:drawableLeft="@drawable/ic_check_black_24dp" />
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
             <Space
                 android:layout_width="20dp"
@@ -88,8 +86,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:drawableLeft="@drawable/ic_close_black_24dp" />
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -75,8 +75,7 @@
                 android:textSize="20sp"
                 android:background="@drawable/boxbg"
                 android:textColor="@android:color/white"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
+                android:textAlignment="center"/>
         </LinearLayout>
 
         <LinearLayout
@@ -186,8 +185,7 @@
                 android:textSize="20sp"
                 android:fontFamily="@font/century"
                 android:textColor="@android:color/white"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
+                android:textAlignment="center"/>
 
         </LinearLayout>
 
@@ -215,8 +213,7 @@
                 android:textSize="20sp"
                 android:fontFamily="@font/century"
                 android:textColor="@android:color/white"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
+                android:textAlignment="center"/>
 
         </LinearLayout>
 

@@ -81,8 +81,7 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titledev"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/titledev" />
 
     <TextView
         android:id="@+id/backd"
@@ -202,8 +201,7 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frontd"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/frontd" />
 
     <TextView
         android:id="@+id/uiname"
@@ -253,8 +251,7 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/launcha"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/launcha" />
 
 
 </android.support.constraint.ConstraintLayout>
